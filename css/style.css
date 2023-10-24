@@ -1,0 +1,291 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+P{
+  color: #4e4e4e ;
+}
+body{
+  background-color: #f5f5f5;
+}
+/*--------------------------section-home ------------- */
+header{
+  height: 100vh;
+  background-image: url(../images/intro-bg.jpg);
+  background-size: 100% 100%;
+}
+.link::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 8;
+  height: 2px;
+  width: 50%;
+  background-color: #fff;
+}
+
+ul li { padding-right: 1rem; }
+
+h1 { font-size: 4.5rem; }
+h6 { font-size: 2.5rem; }
+
+h6::after{
+  content: " ";
+  animation:changing 5s  infinite;
+}
+
+@keyframes changing{
+  0%{
+    content: ".Net Developer ";
+  }
+  25%{
+    content: "BackEND Developer|";
+  }
+  50%{
+    content: "Web Developer |";
+  }
+  75%{
+    content: "Frontend Developer |";
+  }
+  100%{
+    content: "Graphics Designer |";
+  }
+}
+
+
+/*--------------------------section-about------------- */
+h3::after  {
+  content: '';
+  height: 3px;
+  width: 100px;
+  background-color: #0078ff;
+  position: absolute;
+  left: 3%;
+  top: 40px;
+}
+.about span{
+  font-weight: 500;
+  color: #1e1e1e;
+  font-size: 1.1rem;
+}
+.About-me p , .contact p{
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+.progress{
+  background-color: #cde1f8;
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+  margin-top: -10px;
+}
+.progress .progress-bar{
+  height: 100%;
+  background-color: #0078ff;
+}
+
+/*--------------------------section-servives------------- */
+
+h2{
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1e1e1e;
+}
+
+h2::after{
+  content: '';
+  height: 4px;
+  width: 50px;
+  background-color: #0078ff;
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  transform: translate(-50%,-50%);
+
+}
+.par{
+  margin-bottom: 4.5rem;
+}
+
+.services .card{
+  border-radius: 15px;
+  padding-top: 2rem ;
+}
+
+
+.services  i , .contact i{
+  background-color: #fff;
+  color: #000;
+  border: 10px solid #0078ff;
+  width: 110px;
+  height: 110px;
+  border-radius: 50% ;
+  margin: auto;
+  font-size: 3rem;
+  padding: 20px;
+}
+
+.card:hover i{
+  color:  #fff;
+  background-color: #0078ff;
+  border: 10px solid #cde1f8;
+}
+
+/*--------------------------section-clients------------- */
+.clients{
+  background-image: url(../images/counters-bg\ \(1\).jpg); 
+  background-size: 100% 100%;
+  padding: 8rem 0;
+}
+
+
+.layer
+{
+  background-color: #0078ff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .6;
+}
+
+.clients i {
+
+  width: 80px;
+  height: 80px;
+  border-radius: 50% ;
+  color: #fff;
+  border: 8px solid #cde1f8;
+  font-size: 2rem;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.inner p , .carousel-inner p{
+  color: #fff;
+  padding: 3px;
+  font-size: 1.2rem;
+}
+.inner h4 , .carousel-inner h4{ 
+  font-size: 1.5rem; 
+  color: #fff;
+}
+
+/*--------------------------section-portfolio------------ */
+.portfolio span { color: #0078ff; }
+
+.image{
+  overflow: hidden;
+}
+.portfolio .card img{
+  transition: 1s;
+}
+
+
+.portfolio .card:hover img{
+  transform: scale(1.4);
+  cursor: pointer;
+}
+
+/*--------------------------section-testemonial------------ */
+.testimonial{
+  background-image: url(../images/overlay-bg.jpg);
+  background-size: 100% 100%;
+  padding: 7rem 0;
+}
+
+.comit{
+  
+  font-size: 1.5rem;
+  color: #0078ff;
+  background-color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 10px;
+}
+.carousel-indicators li{
+  width: 20px;
+  height: 6px;
+  border: 2px solid #000;
+  padding: 2px;
+}
+
+
+/*--------------------------section-blog------------ */
+.card .word {
+  color: #ffff;
+  padding: 0 15px 5px;
+  background-color: #0078ff;
+  border-radius: 4px;
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  margin-top: -10px;
+}
+.blog .image{
+  width: 12%;
+  margin-right: 3px;
+}
+.card-footer a{
+  text-decoration: none;
+}
+
+/*--------------------------section-contact------------ */
+.contact{
+  background-image: url(../images/overlay-bg.jpg);
+  background-size: 100% 100%;
+  padding-top: 5rem;
+}
+.form{
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 3rem;
+  z-index: 2;
+}
+
+input , textarea{
+  width: 100%;
+  padding: 10px;
+  margin-top: 30px ;
+}
+
+button{
+  background: #0078ff;
+  border: 1px solid transparent;
+  padding: 10px 24px;
+  color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.icon i{
+  width: 50px;
+  height: 50px;
+  border: 3px solid #0078ff;
+  font-size: 1.7rem;
+  padding: 10px;
+}
+.icon:hover i , .bttn:hover button{
+  color:  #fff;
+  background-color: #0078ff;
+  border: 4px solid #cde1f8;
+}
+
+
+/*--------------------------section-footer------------ */
+
+footer {
+  padding: 25px 0;
+  background: #0062d3;
+
+}
+footer p{
+  color: #ffffff;
+}
+
